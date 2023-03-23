@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title_page %}Home{% endblock %}
+
+{% block title_survey %}<h1>{{title}}</h1>{% endblock %}
+
+{% block content %}
+    <div class="form-container">
+        {% block instructions %}{{instructions}}{% endblock %}
+        <form action="/question/0">
+            <button>Start</button>
+        </form>
+    </div>
+{% endblock %}
