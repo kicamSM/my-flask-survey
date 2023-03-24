@@ -7,7 +7,7 @@
 {% block content %}
     <div class="form-container">
         {% block instructions %}{{instructions}}{% endblock %}
-        <form action="/question/0">
+        <form action="/verify_user" method="POST">
             <button>Start</button>
         </form>
     </div>
